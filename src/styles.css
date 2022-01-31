@@ -1,18 +1,60 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  background: black;
 }
 
 .landing-introduction {
-  background: linear-gradient(180deg, #fa9c9c 0%, #922525 100%),
+  background: linear-gradient(transparent, 95%, black),
+    linear-gradient(180deg, #fa9c9c 0%, #922525 100%),
     radial-gradient(60.91% 100% at 50% 0%, #fdbbbb 0%, #260000 100%),
     linear-gradient(238.72deg, #ffdddd 0%, #720066 100%),
     linear-gradient(127.43deg, #26b5e0 0%, #ff4444 100%),
     radial-gradient(100.22% 100% at 70.57% 0%, #ff0000 0%, #26b5e0 100%),
-    linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%);
-  background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge,
-    normal;
+    linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%),
+    linear-gradient(transparent, black 95%);
+  background-blend-mode: normal, screen, overlay, hard-light, color-burn,
+    color-dodge, normal;
   text-align: center;
   color: white;
-  padding: 200px 0;
+  padding: 200px 0 50px;
+}
+
+.explore-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: block;
+  margin-top: 150px;
+}
+
+.education-card {
+  box-shadow: 0px 5px 10px #e848fc;
+  border-color: #e848fc;
+  transition: ease-in-out 0.2s;
+}
+
+.education-card:hover {
+  box-shadow: 1px 10px 20px #e848fc;
+  border-color: #e848fc;
+}
+
+.about-card {
+  box-shadow: 0px 5px 10px #fdd153;
+  border-color: #fdd153;
+  transition: ease-in-out 0.2s;
+}
+.about-card:hover {
+  box-shadow: 1px 10px 20px #fdd153;
+  border-color: #fdd153;
+}
+
+.accomplishment-card {
+  box-shadow: 0px 5px 10px #009dff;
+  border-color: #009dff;
+  transition: ease-in-out 0.2s;
+}
+.accomplishment-card:hover {
+  box-shadow: 1px 10px 20px #009dff;
+  border-color: #009dff;
 }
