@@ -14,7 +14,7 @@ ul {
 
 .education-card h3 {
   animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #e848fc, white);
+  background: linear-gradient(60deg, #c471ed, white);
   background-size: 300%;
 
   -webkit-background-clip: text;
@@ -28,7 +28,7 @@ ul {
 
 .about-card h3 {
   animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #fdd153, white);
+  background: linear-gradient(60deg, #12c2e9, white);
   background-size: 300%;
 
   -webkit-background-clip: text;
@@ -38,7 +38,7 @@ ul {
 
 .skills-card h3 {
   animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #009dff, white);
+  background: linear-gradient(60deg, #f64f59, white);
   background-size: 300%;
 
   -webkit-background-clip: text;
@@ -83,37 +83,37 @@ ul {
 }
 
 .education-card {
-  box-shadow: 0px 5px 10px #e848fc;
-  border-color: #e848fc;
+  box-shadow: 0px 5px 10px #c471ed;
+  border-color: #c471ed;
   color: white;
   transition: ease-in-out 0.2s;
 }
 
 .education-card:hover {
-  box-shadow: 1px 10px 20px #e848fc;
+  box-shadow: 1px 10px 20px #c471ed;
   border-color: #e848fc;
 }
 
 .about-card {
-  box-shadow: 0px 5px 10px #fdd153;
-  border-color: #fdd153;
+  box-shadow: 0px 5px 10px #12c2e9;
+  border-color: #12c2e9;
   transition: ease-in-out 0.2s;
   color: white;
 }
 .about-card:hover {
-  box-shadow: 1px 10px 20px #fdd153;
-  border-color: #fdd153;
+  box-shadow: 1px 10px 20px #12c2e9;
+  border-color: #12c2e9;
 }
 
 .skills-card {
-  box-shadow: 0px 5px 10px #009dff;
-  border-color: #009dff;
+  box-shadow: 0px 5px 10px #f64f59;
+  border-color: #f64f59;
   transition: ease-in-out 0.2s;
   color: white;
 }
 .skills-card:hover {
-  box-shadow: 1px 10px 20px #009dff;
-  border-color: #009dff;
+  box-shadow: 1px 10px 20px #f64f59;
+  border-color: #f64f59;
 }
 
 .images {
@@ -128,5 +128,28 @@ ul {
   padding: 4px;
   margin: 10px;
   border-radius: 30%;
-  box-shadow: 0px 5px 5px #009dff;
+  box-shadow: 0px 5px 5px #f64f59;
+}
+
+.logos:hover {
+  box-shadow: 2px 8px 5px #f64f59;
+}
+
+.about-image {
+  --angle: 0deg;
+  border: 3em solid;
+  border-image: linear-gradient(0deg, #12c2e9, white) 1;
+  animation: flow 10s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
