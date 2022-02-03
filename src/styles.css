@@ -12,50 +12,8 @@ ul {
   padding: 0;
 }
 
-.education-card h3 {
-  animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #c471ed, white);
-  background-size: 300%;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .education-card h4 {
   font-size: 18px;
-}
-
-.about-card h3 {
-  animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #12c2e9, white);
-  background-size: 300%;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.skills-card h3 {
-  animation: flow 5s ease-in-out infinite;
-  background: linear-gradient(60deg, #f64f59, white);
-  background-size: 300%;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes flow {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }
 
 .landing-introduction {
@@ -82,38 +40,103 @@ ul {
   margin-top: 150px;
 }
 
-.education-card {
-  box-shadow: 0px 5px 10px #c471ed;
-  border-color: #c471ed;
+.about-card {
+  transition: ease-in-out 0.5s;
   color: white;
-  transition: ease-in-out 0.2s;
+  margin-top: 150px;
+}
+.about-card:hover {
+  transform: translateY(-20px);
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f27121, #ff0058);
+  border-radius: 10px;
+}
+
+.about-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f27121, #ff0058);
+  filter: blur(30px);
+}
+
+.education-card {
+  color: white;
+  transition: ease-in-out 0.5s;
+  margin-top: 10px;
 }
 
 .education-card:hover {
-  box-shadow: 1px 10px 20px #c471ed;
-  border-color: #e848fc;
+  transform: translateY(-20px);
 }
 
-.about-card {
-  box-shadow: 0px 5px 10px #12c2e9;
-  border-color: #12c2e9;
-  transition: ease-in-out 0.2s;
-  color: white;
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  border-radius: 10px;
 }
-.about-card:hover {
-  box-shadow: 1px 10px 20px #12c2e9;
-  border-color: #12c2e9;
+
+.education-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  filter: blur(30px);
 }
 
 .skills-card {
-  box-shadow: 0px 5px 10px #f64f59;
-  border-color: #f64f59;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.5s;
   color: white;
+  margin-top: 10px;
 }
 .skills-card:hover {
-  box-shadow: 1px 10px 20px #f64f59;
-  border-color: #f64f59;
+  transform: translateY(-20px);
+}
+
+.skills-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #9d50bb, #03a9f4);
+  border-radius: 10px;
+}
+
+.skills-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #9d50bb, #03a9f4);
+  filter: blur(30px);
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
 }
 
 .images {
@@ -124,32 +147,37 @@ ul {
 
 .logos {
   width: 18%;
+  max-width: 58px;
   background: rgb(255, 255, 255, 0.4);
   padding: 4px;
   margin: 10px;
   border-radius: 30%;
-  box-shadow: 0px 5px 5px #f64f59;
+  box-shadow: 0px 5px 5px #03a9f4;
 }
 
 .logos:hover {
-  box-shadow: 2px 8px 5px #f64f59;
+  box-shadow: 2px 8px 5px #03a9f4;
 }
 
-.about-image {
-  --angle: 0deg;
-  border: 3em solid;
-  border-image: linear-gradient(0deg, #12c2e9, white) 1;
-  animation: flow 10s linear infinite;
-}
-
-@keyframes rotate {
-  to {
-    --angle: 360deg;
+@media (max-width: 576px) {
+  h3 {
+    text-align: center;
   }
-}
 
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+  .landing-introduction {
+    padding: 100px 0 50px;
+  }
+
+  .landing-introduction img {
+    max-width: 50%;
+  }
+  .col-10,
+  .col-5 {
+    width: 90%;
+  }
+
+  .about-card {
+    margin-top: 50px;
+    text-align: center;
+  }
 }
