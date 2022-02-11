@@ -1,7 +1,22 @@
+:root {
+  --landing-gradient: linear-gradient(transparent, 95%, black),
+    linear-gradient(180deg, #fa9c9c 0%, #922525 100%),
+    radial-gradient(60.91% 100% at 50% 0%, #fdbbbb 0%, #260000 100%),
+    linear-gradient(238.72deg, #ffdddd 0%, #720066 100%),
+    linear-gradient(127.43deg, #26b5e0 0%, #ff4444 100%),
+    radial-gradient(100.22% 100% at 70.57% 0%, #ff0000 0%, #26b5e0 100%),
+    linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%);
+
+  --footer-gradient: linear-gradient(0deg, #ffa3d5, #a62fd0, black);
+  --gradient-primary: linear-gradient(45deg, #f27121, #ff0058);
+  --gradient-secondary: linear-gradient(315deg, #03a9f4, #ff0058);
+  --gradient-tertiary: linear-gradient(315deg, #9d50bb, #03a9f4);
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   background: black;
+  color: white;
 }
 
 li {
@@ -12,106 +27,76 @@ ul {
   padding: 0;
 }
 
-.education-card h4 {
+h4 {
   font-size: 18px;
 }
 
+footer {
+  background: var(--footer-gradient);
+  padding: 100px 50px;
+}
+
 .landing-introduction {
-  background: linear-gradient(transparent, 95%, black),
-    linear-gradient(180deg, #fa9c9c 0%, #922525 100%),
-    radial-gradient(60.91% 100% at 50% 0%, #fdbbbb 0%, #260000 100%),
-    linear-gradient(238.72deg, #ffdddd 0%, #720066 100%),
-    linear-gradient(127.43deg, #26b5e0 0%, #ff4444 100%),
-    radial-gradient(100.22% 100% at 70.57% 0%, #ff0000 0%, #26b5e0 100%),
-    linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%),
-    linear-gradient(transparent, black 95%);
+  background: var(--landing-gradient);
   background-blend-mode: normal, screen, overlay, hard-light, color-burn,
-    color-dodge, normal;
+    color-dodge;
   text-align: center;
-  color: white;
   padding: 200px 0 50px;
 }
 
 .explore-link {
   text-decoration: none;
-  color: white;
   font-size: 20px;
   display: block;
   margin-top: 150px;
+  color: white;
+  transition: ease-in-out 0.5s;
 }
 
-.about-card {
-  transition: ease-in-out 0.5s;
+.read-more-link {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
   color: white;
+  transition: ease-in-out 0.5s;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.explore-link:hover,
+.read-more-link:hover {
+  letter-spacing: 2px;
+  color: white;
+}
+
+.about-landing {
   margin-top: 150px;
-}
-.about-card:hover {
-  transform: translateY(-20px);
+  margin-bottom: 150px;
 }
 
-.about-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #f27121, #ff0058);
-  border-radius: 10px;
+.card-body {
+  position: relative;
+  z-index: 2;
 }
 
-.about-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #f27121, #ff0058);
-  filter: blur(30px);
-}
-
-.education-card {
-  color: white;
-  transition: ease-in-out 0.5s;
-  margin-top: 10px;
-}
-
-.education-card:hover {
-  transform: translateY(-20px);
-}
-
-.education-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(315deg, #03a9f4, #ff0058);
-  border-radius: 10px;
-}
-
-.education-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(315deg, #03a9f4, #ff0058);
-  filter: blur(30px);
-}
-
+.about-card,
+.education-card,
 .skills-card {
   transition: ease-in-out 0.5s;
-  color: white;
   margin-top: 10px;
 }
+
+.about-card:hover,
+.education-card:hover,
 .skills-card:hover {
   transform: translateY(-20px);
 }
 
+.about-card::before,
+.education-card::before,
 .skills-card::before {
   content: "";
   position: absolute;
@@ -119,10 +104,11 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315deg, #9d50bb, #03a9f4);
   border-radius: 10px;
 }
 
+.about-card::after,
+.education-card::after,
 .skills-card::after {
   content: "";
   position: absolute;
@@ -130,13 +116,20 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(315deg, #9d50bb, #03a9f4);
   filter: blur(30px);
 }
+.about-card::before,
+.about-card::after {
+  background: var(--gradient-primary);
+}
+.education-card::before,
+.education-card::after {
+  background: var(--gradient-secondary);
+}
 
-.card-body {
-  position: relative;
-  z-index: 2;
+.skills-card::before,
+.skills-card::after {
+  background: var(--gradient-tertiary);
 }
 
 .images {
