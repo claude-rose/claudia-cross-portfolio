@@ -25,14 +25,6 @@ body {
   color: white;
 }
 
-li {
-  list-style-type: none;
-}
-
-ul {
-  padding: 0;
-}
-
 h4 {
   font-size: 18px;
 }
@@ -40,6 +32,14 @@ h4 {
 footer {
   background: var(--footer-gradient);
   padding: 100px 50px;
+}
+
+.card-body li {
+  list-style-type: none;
+}
+
+.card-body ul {
+  padding: 0;
 }
 
 .landing-introduction {
@@ -186,6 +186,13 @@ footer {
   box-shadow: 2px 8px 5px #03a9f4;
 }
 
+.profile-image {
+  border-radius: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 50px 5px #9d50bb;
+}
+
 @media (max-width: 576px) {
   h3 {
     text-align: center;
@@ -205,17 +212,12 @@ footer {
     max-width: 50%;
   }
   .col-10,
-  .col-5,
-  .col-6 {
+  .col-5 {
     width: 90%;
   }
 
   .about-card {
     margin-top: 50px;
     text-align: center;
-  }
-
-  .subpage-images {
-    display: none;
   }
 }
