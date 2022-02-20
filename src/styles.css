@@ -23,11 +23,13 @@ h4 {
 }
 
 footer {
-  padding: 100px 50px;
+  padding: 50px 50px;
+  margin-top: 50px;
 }
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 .vl-1 {
@@ -218,6 +220,32 @@ a {
 .horizontal-list {
   display: flex;
   list-style-type: none;
+  justify-content: start;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.horizontal-list li {
+  padding: 0 30px;
+}
+
+.social-links {
+  font-size: 36px;
+  justify-content: space-evenly;
+}
+
+.contact-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  background: -webkit-linear-gradient(#9d50bb, #fa9c9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 576px) {
