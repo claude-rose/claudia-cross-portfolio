@@ -6,14 +6,7 @@
     linear-gradient(127.43deg, #26b5e0 0%, #ff4444 100%),
     radial-gradient(100.22% 100% at 70.57% 0%, #ff0000 0%, #26b5e0 100%),
     linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%);
-  --about-gradient: linear-gradient(-135deg, transparent, 50%, black),
-    linear-gradient(180deg, #fa9c9c 0%, #922525 100%),
-    radial-gradient(60.91% 100% at 50% 0%, #fdbbbb 0%, #260000 100%),
-    linear-gradient(238.72deg, #ffdddd 0%, #720066 100%),
-    linear-gradient(127.43deg, #26b5e0 0%, #ff4444 100%),
-    radial-gradient(100.22% 100% at 70.57% 0%, #ff0000 0%, #26b5e0 100%),
-    linear-gradient(127.43deg, #b7d500 0%, #3300ff 100%);
-  --footer-gradient: linear-gradient(0deg, #ffa3d5, #a62fd0, black);
+
   --gradient-primary: linear-gradient(45deg, #f27121, #ff0058);
   --gradient-secondary: linear-gradient(315deg, #03a9f4, #ff0058);
   --gradient-tertiary: linear-gradient(315deg, #9d50bb, #03a9f4);
@@ -30,8 +23,35 @@ h4 {
 }
 
 footer {
-  background: var(--footer-gradient);
   padding: 100px 50px;
+}
+
+a {
+  color: white;
+}
+
+.vl-1 {
+  position: relative;
+  left: 50%;
+  width: 4px;
+  height: 150px;
+  background: linear-gradient(180deg, #70219a, #f8373c);
+}
+
+.vl-2 {
+  position: relative;
+  left: 50%;
+  width: 4px;
+  height: 200px;
+  background: linear-gradient(180deg, #03a9f4, #70219a);
+}
+
+.vl-3 {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 700px;
+  background: linear-gradient(180deg, #70219a, #f8373c);
 }
 
 .card-body li {
@@ -47,16 +67,7 @@ footer {
   background-blend-mode: normal, screen, overlay, hard-light, color-burn,
     color-dodge;
   text-align: center;
-  padding: 200px 0 50px;
-}
-
-.about-introduction {
-  background: var(--about-gradient);
-  background-blend-mode: normal, screen, overlay, hard-light, color-burn,
-    color-dodge;
-  text-align: left;
-  padding: 100px 0 50px;
-  margin-bottom: 50px;
+  padding: 50px 0 50px;
 }
 
 .explore-link {
@@ -79,6 +90,7 @@ footer {
   transition: ease-in-out 0.5s;
   border: 1px solid white;
   border-radius: 4px;
+  margin-bottom: 50px;
 }
 
 .qualification-links {
@@ -107,8 +119,8 @@ footer {
 }
 
 .about-landing {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card-body {
@@ -116,16 +128,22 @@ footer {
   z-index: 2;
 }
 
+.portfolio-card {
+  box-shadow: 2px 2px 20px #03a9f4;
+}
+
 .about-card,
 .education-card,
-.skills-card {
+.skills-card,
+.portfolio-card {
   transition: ease-in-out 0.5s;
   margin-top: 10px;
 }
 
 .about-card:hover,
 .education-card:hover,
-.skills-card:hover {
+.skills-card:hover,
+.portfolio-card:hover {
   transform: translateY(-20px);
 }
 
@@ -191,6 +209,15 @@ footer {
   max-width: 300px;
   margin: 0 auto;
   box-shadow: 0px 0px 50px 5px #9d50bb;
+}
+
+.contact-landing {
+  margin-top: 300px;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
 }
 
 @media (max-width: 576px) {
