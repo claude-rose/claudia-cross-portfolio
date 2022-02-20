@@ -47,33 +47,36 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link active" aria-current="page" href="about.html"
               >About Me</a
             >
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="/#portfolio">Portfolio</a>
+            <a class="nav-link" href="/#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="about-introduction">
-      <div class="container">
-        <h1 class="display-3 d-block">About Me</h1>
-      </div>
-    </div>
+    <div class="vl-4"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-5">
+      <h1 class="display-3 mt-5 mb-5 ms-5 text-center">Hi, I'm Claudia ✨</h1>
+    </div>
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <div class="col-lg-4 mt-5 mb-5">
           <img
             src="/src/images/profile.jpeg"
             alt="Portrait"
             class="d-block profile-image"
           />
         </div>
-        <div class="col-md-8">
-          <div class="card mb-5 education-card bg-transparent">
+        <div class="col-lg-8">
+          <div class="card mb-5 mt-5 about-card bg-transparent">
             <div class="card-body">
               <h3>About</h3>
               Claudia is a budding front-end developer from the Gold Coast,
@@ -94,7 +97,8 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="container">
         <div class="row mb-5">
           <div class="col-md-6">
             <img
@@ -102,7 +106,9 @@
               alt="Shecodes Plus certificate"
               class="img-fluid mb-5 mt-5"
             />
-            <h2>SheCodes Plus Coding Workshop</h2>
+            <h2 class="mb-4 text-center text-md-start">
+              SheCodes Plus Coding Workshop
+            </h2>
             <h4>Skills and Languages Developed</h4>
             <ul>
               <li>Advanced HTML, CSS and Responsive design</li>
@@ -132,7 +138,9 @@
               alt="Shecodes Basic certificate"
               class="img-fluid mb-5 mt-5"
             />
-            <h2>SheCodes Basic Coding Workshop</h2>
+            <h2 class="mb-4 text-center text-md-start">
+              SheCodes Basic Coding Workshop
+            </h2>
             <h4>Skills and Languages Developed</h4>
             <ul>
               <li>HTML</li>
@@ -157,13 +165,34 @@
     </div>
   </body>
   <footer>
-    <div>
-      <span>
-        <h5>Follow my journey</h5>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-      </span>
-      <i class="fab fa-github"></i>
+    <div class="row mt-5">
+      <div class="col-md-5">
+        <ul class="horizontal-list d-none d-md-flex">
+          <li>
+            <a href="https://www.linkedin.com/in/claudia-cross-718373232/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/claude.rose/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/claude-rose/claudia-cross-portfolio">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5 class="footer-title display-5">Claudia Cross</h5>
+      </div>
+      <div class="col-md-5 text-center text-md-end">
+        <a href="https://github.com/claude-rose/claudia-cross-portfolio">
+          View open-sourced code 👽</a
+        >
+      </div>
     </div>
   </footer>
 </html>

@@ -46,6 +46,7 @@ a {
   width: 4px;
   height: 200px;
   background: linear-gradient(180deg, #03a9f4, #70219a);
+  margin-bottom: 20px;
 }
 
 .vl-3 {
@@ -53,6 +54,15 @@ a {
   left: 50%;
   width: 4px;
   height: 700px;
+  background: linear-gradient(180deg, #70219a, #f8373c);
+}
+
+.vl-4 {
+  position: relative;
+  left: 50%;
+  width: 4px;
+  height: 150px;
+  top: 0%;
   background: linear-gradient(180deg, #70219a, #f8373c);
 }
 
@@ -210,11 +220,12 @@ a {
   border-radius: 50%;
   max-width: 300px;
   margin: 0 auto;
-  box-shadow: 0px 0px 50px 5px #9d50bb;
+  box-shadow: 0px 0px 50px 5px #fe5d02;
 }
 
 .contact-landing {
-  margin-top: 300px;
+  padding-top: 200px;
+  margin-top: 100px;
 }
 
 .horizontal-list {
@@ -248,7 +259,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   h3 {
     text-align: center;
   }
@@ -266,13 +277,20 @@ a {
   .landing-introduction img {
     max-width: 50%;
   }
-  .col-10,
-  .col-5 {
-    width: 90%;
-  }
 
   .about-card {
     margin-top: 50px;
+    text-align: center;
+  }
+  .contact-image {
+    max-width: 50%;
+  }
+
+  .vl-3 {
+    height: 200px;
+  }
+
+  .contact-landing {
     text-align: center;
   }
 }

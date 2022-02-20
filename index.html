@@ -47,11 +47,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="about.html">About Me</a>
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -69,7 +73,7 @@
     <div class="vl-1"></div>
     <div class="container about-landing" id="about">
       <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-md-10">
           <div class="card mb-5 about-card bg-transparent">
             <div class="card-body">
               <h3>About</h3>
@@ -88,7 +92,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-5">
+        <div class="col-md-5">
           <div class="card mb-5 education-card bg-transparent">
             <div class="card-body">
               <h3>Education</h3>
@@ -110,7 +114,7 @@
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-md-5">
           <div class="card mb-5 skills-card bg-transparent">
             <div class="card-body">
               <h3>Languages & Skills</h3>
@@ -171,12 +175,12 @@
       <div>
         <a href="about.html" class="read-more-link">Read More</a>
       </div>
-      <div class="vl-2"></div>
     </div>
-    <div class="container">
+    <div class="container" id="portfolio">
+      <div class="vl-2"></div>
       <h3 class="display-5 text-center">Some of my work.</h3>
-      <div class="row mt-5 mb-5">
-        <div class="col-6">
+      <div class="row mb-5">
+        <div class="col-md-6 mt-5">
           <a
             href="https://www.shecodes.io/workshops/shecodes-plus-d06049c3-f016-47b1-8d88-446d4f80d767/projects/660701"
           >
@@ -187,7 +191,7 @@
             />
           </a>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 mt-5">
           <a
             href="https://www.shecodes.io/workshops/shecodes-basics-c70d9730-7e11-4bae-9f91-872d56eb5443/projects/577252"
           >
@@ -201,9 +205,9 @@
       </div>
     </div>
     <div class="vl-3"></div>
-    <div class="container contact-landing">
+    <div class="container contact-landing" id="contact">
       <div class="row justify-content-md-center">
-        <div class="col-6">
+        <div class="col-md-6">
           <h3 class="display-5">Lets connect!</h3>
           Do you need help with a project, website or just want to chat?
           <br /><br />Shoot me an email:
@@ -232,7 +236,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <img
             src="/src/images/memoji-peace.png"
             alt="memoji with peace sign"
@@ -244,8 +248,8 @@
   </body>
   <footer>
     <div class="row mt-5">
-      <div class="col-5">
-        <ul class="horizontal-list">
+      <div class="col-md-5">
+        <ul class="horizontal-list d-none d-md-flex">
           <li>
             <a href="https://www.linkedin.com/in/claudia-cross-718373232/"
               ><i class="fab fa-linkedin-in"></i
@@ -263,10 +267,10 @@
           </li>
         </ul>
       </div>
-      <div class="col-2">
+      <div class="col-md-2">
         <h5 class="footer-title display-5">Claudia Cross</h5>
       </div>
-      <div class="col-5 text-end">
+      <div class="col-md-5 text-center text-md-end">
         <a href="https://github.com/claude-rose/claudia-cross-portfolio">
           View open-sourced code 👽</a
         >
