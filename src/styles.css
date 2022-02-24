@@ -22,11 +22,6 @@ h4 {
   font-size: 18px;
 }
 
-footer {
-  padding: 50px 50px;
-  margin-top: 50px;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -73,10 +68,6 @@ a:hover {
 
 .card-body li {
   list-style-type: none;
-}
-
-.card-body ul {
-  padding: 0;
 }
 
 .landing-introduction {
@@ -133,11 +124,6 @@ a:hover {
 .about-links:hover {
   letter-spacing: 2px;
   color: white;
-}
-
-.about-landing {
-  padding-top: 50px;
-  margin-bottom: 50px;
 }
 
 .card-body {
@@ -265,16 +251,6 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
-  h3 {
-    text-align: center;
-  }
-
-  .about-introduction h1 {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   .landing-introduction {
     padding: 100px 0 50px;
   }
@@ -283,10 +259,6 @@ a:hover {
     max-width: 50%;
   }
 
-  .about-card {
-    margin-top: 50px;
-    text-align: center;
-  }
   .contact-image {
     max-width: 50%;
   }
@@ -295,7 +267,10 @@ a:hover {
     height: 200px;
   }
 
-  .contact-landing {
-    text-align: center;
+  .about-card:hover,
+  .education-card:hover,
+  .skills-card:hover,
+  .portfolio-card:hover {
+    transform: translateY(0px);
   }
 }
